@@ -21,7 +21,7 @@
             width: 100%;
         }
         &:hover {
-            filter: contrast(175%) brightness(3%);
+            filter: grayscale(50%);
         }
     }
 }
