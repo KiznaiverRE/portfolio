@@ -1,0 +1,94 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        @include before_circle;
+        text-align: center;
+        padding-top: 7px;
+        &:before {
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        padding: 60px 65px 0 65px;
+        column-gap: 136px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            line-height: 20px;
+            &:before {
+                content: '';
+                position: absolute;
+                left: -50px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                background-color: $primary-color;
+                border-radius: 100%;
+            }
+        }
+        ul {
+            list-style-type: none;
+            position: relative;
+            li {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: -43px;
+                    top: -47px;
+                    width: 1px;
+                    height: calc(100% + 45px);
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &-item {
+        margin-top: 45px;
+        position: relative;
+        &-head {
+            position: relative;
+            padding-left: 56px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 18px;
+                left: -43px;
+                width: 44px;
+                height: 1px;
+                background-color: #000;
+            }
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-icon {
+            position: absolute;
+            left: 17px;
+            top: 13px;
+            @include before_circle;
+            &:before {
+                top: -50%;
+                left: -63%;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+        &-body {
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    
+}
