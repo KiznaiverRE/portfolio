@@ -20,7 +20,20 @@
         font-size: 14px;
         line-height: 21px;
     }
-    &_center {
+}
+.section {
+    &-title {
+        position: relative;
+        @include before_circle;
+        text-align: center;
+        padding-top: 7px;
+        &:before {
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    }
+    &-subtitle {
         text-align: center;
     }
 }

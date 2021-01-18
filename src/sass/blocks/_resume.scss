@@ -1,16 +1,5 @@
 .resume {
     padding-top: 120px;
-    &__title {
-        position: relative;
-        @include before_circle;
-        text-align: center;
-        padding-top: 7px;
-        &:before {
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-        }
-    }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 425px);
@@ -52,7 +41,7 @@
     &-item {
         margin-top: 45px;
         position: relative;
-        &-head {
+        &__head {
             position: relative;
             padding-left: 56px;
             &:before {
@@ -68,7 +57,7 @@
                 margin-bottom: 0;
             }
         }
-        &-icon {
+        &__icon {
             position: absolute;
             left: 17px;
             top: 13px;
@@ -78,12 +67,12 @@
                 left: -63%;
             }
         }
-        &-location {
+        &__location {
             font-size: 12px;
             line-height: 18px;
             color: #000;
         }
-        &-body {
+        &__body {
             margin-top: 12px;
             font-size: 12px;
             line-height: 18px;
