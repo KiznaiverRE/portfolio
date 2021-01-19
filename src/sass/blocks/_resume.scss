@@ -66,6 +66,10 @@
                 top: -50%;
                 left: -63%;
             }
+            img {
+                max-width: 25px;
+                max-height: 25px;
+            }
         }
         &__location {
             font-size: 12px;

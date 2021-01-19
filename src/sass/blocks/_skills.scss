@@ -16,8 +16,11 @@
         }
         &__icon {
             display: flex;
-            min-height: 65px;
+            height: 65px;
             align-items: center;
+            img {
+                max-height: 100%;
+            }
         }
         &__text {
             font-size: 12px;

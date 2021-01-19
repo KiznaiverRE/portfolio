@@ -29,6 +29,9 @@ counters.forEach( (item, i) => {
 					email: {
 						required: true,
 						email: true
+					},
+					check: {
+						required: true
 					}
 				},
 				messages: {
@@ -37,14 +40,17 @@ counters.forEach( (item, i) => {
 						minlength: jQuery.validator.format("Введите {0} символа!")
 					},
 					email: {
-					required: "Пожалуйста, введите свою почту",
-					email: "Неправильно введён адрес почты"
+						required: "Пожалуйста, введите свою почту",
+						email: "Неправильно введён адрес почты"
+					},
+					check: {
+						required: "Необходимо поставить галочку"
 					}
 				}
 			});
 		};
 
-		valideForms('#contact-form');
+		valideForms('.contacts__form');
 
 
 
