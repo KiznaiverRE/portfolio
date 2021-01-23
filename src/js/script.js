@@ -12,8 +12,8 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
-const counters = document.querySelectorAll('.skills-ratings__counter'),
-    indicators = document.querySelectorAll('.skills-ratings__indicator');
+const counters = document.querySelectorAll('.rating-item__counter'),
+    indicators = document.querySelectorAll('.rating-item__indicator');
 
 counters.forEach( (item, i) => {
     indicators[i].style.width = item.innerHTML;
@@ -36,11 +36,11 @@ counters.forEach( (item, i) => {
 				},
 				messages: {
 					name: {
-						required: "Пожалуйста, введите своё имя",
+						required: "Введите своё имя",
 						minlength: jQuery.validator.format("Введите {0} символа!")
 					},
 					email: {
-						required: "Пожалуйста, введите свою почту",
+						required: "Введите свою почту",
 						email: "Неправильно введён адрес почты"
 					},
 					check: {

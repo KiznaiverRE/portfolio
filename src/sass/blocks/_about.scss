@@ -49,7 +49,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         grid-template-rows: repeat(2, minmax(116px, auto));
-        grid-auto-rows: 116px;
+        grid-auto-rows: minmax(116px, auto);
         gap: 20px 50px;
         &-item {
             display: grid;
